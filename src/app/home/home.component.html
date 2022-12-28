@@ -9,7 +9,6 @@
 
           <courses-card-list 
             [courses]="beginnerCourses$ | async"
-            (coursesChanged)="reloadCourses()"
           ></courses-card-list>
 
         </mat-tab>
@@ -18,7 +17,6 @@
 
           <courses-card-list 
             [courses]="advancedCourses$ | async"
-            (coursesChanged)="reloadCourses()"
           ></courses-card-list>
 
         </mat-tab>
